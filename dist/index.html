@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Wikipedia Explore</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<svg id="loading" width="100%" height="100%">
+  <circle 
+    id="load-circle" 
+    cx="50vw"
+    cy="50vh"
+    r="100"
+  />
+</svg>
+<main>
+  <section id="search-section">
+    <h1 id="title">Wikipedia Explore</h1>
+    <div id="input-container">
+      <button id="clear-btn">X</button>
+      <input id="search-input" 
+        placeholder='Type your query and press "Enter"'
+      />
+      <a 
+         id="random-btn"
+         href="https://en.wikipedia.org/wiki/Special:Random"
+         target="_blank"
+         rel="noopener"
+      >I am lucky</a>
+    </div>
+  </section>
+  <section id="results-section">
+  </section>
+</main>
+<footer></footer>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
